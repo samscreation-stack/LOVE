@@ -31,8 +31,8 @@
     const ROTATION_SPEED_Y = 0.012;
 
     const WORDS = [
-        'I love you', 'i love you', '❤', 'love', 'te amo', 'je t\'aime',
-        'forever', 'always', 'you', 'me & you', 'love you', 'sweetheart'
+        'I love you sunflower', 'i love you maleka', '❤', 'love', 'kiss you', 'Helianthus',
+        'forever', 'always', 'you', 'me & you', 'love you', 'Janeman'
     ];
 
     let startTimestamp = null;
@@ -65,8 +65,8 @@
         const duration = 2400;
         const steps = [
             { threshold: 20, text: 'Initiating self-destruction... 💣' },
-            { threshold: 50, text: 'Bypassing Hassan\'s security... 🔒' },
-            { threshold: 80, text: 'Stealing Lishu\'s heart... 🕵️‍♂️' },
+            { threshold: 50, text: 'Bypassing Sam's security... ' },
+            { threshold: 80, text: 'Stealing Sam's heart... 🕵️‍♂️' },
             { threshold: 95, text: 'Injecting 999 tons of love... 💖' },
             { threshold: 100, text: 'Explosion imminent! 💥' }
         ];
@@ -106,9 +106,9 @@
     let isLetterOpen = false;
     let isLetterTyping = false;
     
-    let recipient = 'Lishu';
-    let sender = 'Hassan';
-    let message = "Dear Lishu,\n\nThis is my love for you... 🌹\n\nEvery line of code, every pixel, and every beat of this heart is a reminder of how incredibly special you are to me. You make my world so much brighter, and my life complete. ✨\n\nNo matter where life takes us, my heart will always run in an infinite loop for you, beating forever and always. You are my today and all of my tomorrows. 💗💍";
+    let recipient = 'Sunflower';
+    let sender = 'Sam';
+    let message = "Dear Sunflower,\n\nThis is my love for you... 🌹\n\nEvery line of code, every pixel, and every beat of this heart is a reminder of how incredibly special you are to me. You make my world so much brighter, and my life complete. ✨\n\nNo matter where life takes us, my heart will always run in an infinite loop for you, beating forever and always. You are my today and all of my tomorrows. 💗💍";
 
     function initLoveData() {
         const params = new URLSearchParams(window.location.search);
@@ -238,8 +238,8 @@
 
     document.getElementById('saveLetterBtn').addEventListener('click', () => {
         playClickSound();
-        const newRecipient = document.getElementById('recipientInput').value.trim() || 'Lishu';
-        const newSender = document.getElementById('senderInput').value.trim() || 'Hassan';
+        const newRecipient = document.getElementById('recipientInput').value.trim() || 'Maleka';
+        const newSender = document.getElementById('senderInput').value.trim() || 'Sam';
         const newMessage = document.getElementById('messageInput').value.trim() || `Dear ${newRecipient},\n\nThis is my love for you... 🌹\n\nEvery line of code, every pixel, and every beat of this heart is a reminder of how incredibly special you are to me. You make my world so much brighter, and my life complete. ✨\n\nNo matter where life takes us, my heart will always run in an infinite loop for you, beating forever and always. You are my today and all of my tomorrows. 💗💍`;
 
         recipient = newRecipient;
